@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout with Grid and Flexbox</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--
+        The main container uses CSS Grid to define the overall layout of the page.
+        Grid template areas are used to place the header, nav, main, sidebar, and footer.
+    -->
+    <div class="container">
+        <header class="header">
+            <h1>My Responsive Website</h1>
+        </header>
+
+        <!--
+            The navigation bar uses Flexbox to align the links horizontally and
+            distribute space between them.
+        -->
+        <nav class="nav">
+            <a href="#" class="nav-item">Home</a>
+            <a href="#" class="nav-item">About</a>
+            <a href="#" class="nav-item">Services</a>
+            <a href="#" class="nav-item">Contact</a>
+        </nav>
+
+        <main class="main-content">
+            <h2>Main Content Area</h2>
+            <p>
+                This is the main content of the webpage. It's built to be flexible and adapt to different screen sizes.
+                On a desktop, this content sits next to the sidebar. As the screen gets smaller,
+                the layout will shift, and this section will likely take up more space or stack on top.
+            </p>
+            <p>
+                The `main-content` and `sidebar` are part of the larger Grid layout,
+                demonstrating a clean separation of concerns for the page structure.
+            </p>
+        </main>
+
+        <aside class="sidebar">
+            <h3>Sidebar</h3>
+            <p>
+                This is a sidebar containing some information that will be display at the sidebar
+                and will shrink to the side for smaller screens for a Responsive layout.
+            </p>
+            <div class="card">
+                <h4>Related Links</h4>
+                <ul>
+                    <li><a href="#">Article One</a></li>
+                    <li><a href="#">Article Two</a></li>
+                    <li><a href="#">Article Three</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <footer class="footer">
+            <p>&copy; Responsive Design Assignment</p>
+        </footer>
+    </div>
+
+</body>
+</html>
